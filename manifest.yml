@@ -1,0 +1,12 @@
+applications:
+- path: .
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  name: raspberryPIcourse
+  host: raspberryPIcourse
+  disk_quota: 1024M
+  services:
+  - raspberryPIcourse-cloudantNoSQLDB
+  - raspberryPIcourse-iotf-service
+  - availability-monitoring-auto
